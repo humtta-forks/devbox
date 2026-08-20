@@ -16,7 +16,7 @@ curl -fsSL https://get.jetpack.io/devbox | bash
 ```
 
 Start the devbox shell:
-```sh 
+```sh
 devbox shell
 ```
 
@@ -45,7 +45,7 @@ Scripts are custom commands that can be run using this project's environment. Th
 
 {{- if .InitHook }}
 ## Shell Init Hook
-The Shell Init Hook is a script that runs whenever the devbox environment is instantiated. It runs 
+The Shell Init Hook is a script that runs whenever the devbox environment is instantiated. It runs
 on `devbox shell` and on `devbox run`.
 ```sh
 {{ .InitHook }}
