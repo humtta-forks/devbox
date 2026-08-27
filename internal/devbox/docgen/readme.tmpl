@@ -36,7 +36,7 @@ devbox run <script>
 Scripts are custom commands that can be run using this project's environment. This project has the
 following scripts:
 {{ range $name, $_ := .Scripts }}
-* [{{ $name }}](#devbox-run-{{ $name }})
+- [{{ $name }}](#devbox-run-{{ $name }})
 {{- end }}
 {{ end }}
 
@@ -64,7 +64,7 @@ on `devbox shell` and on `devbox run`.
 {{- if .Packages }}
 ## Packages
 {{ range .Packages }}
-* {{ if .DocsURL }}[{{ .Raw }}]({{ .DocsURL }}){{ else }}{{ .Raw }}{{ end }}
+- {{ if .DocsURL }}[{{ .Raw }}]({{ .DocsURL }}){{ else }}{{ .Raw }}{{ end }}
 {{- end }}
 {{ end }}
 
